@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pagina de javascript</title>
+    <script language="javascript">
+      var nombres = new Array();
+      var nombre;
+      nombres[0] = "Nacho";
+      nombres[1] = "Arek";
+      nombres[2] = "Laura";
+      nombres[3] = "Gonzalo";
+      nombres[4] = "Eva";
+      nombres[5] = "Pedro";
+      nombres[6] = "Sonia";
+
+      document.write (nombres[0] + "<br>");
+      document.write (nombres[1] + "<br>");
+      document.write (nombres[2] + "<br>");
+      document.write (nombres[3] + "<br>");
+      document.write (nombres[4] + "<br>");
+      document.write (nombres[5] + "<br>");
+      document.write (nombres[6] + "<br>");
+
+      nombres[7] ="Manuel";
+      document.write (nombres[7] + "<br>");
+      encontrado=false;
+      nombre = prompt("ingrese el nombre buscado","");
+
+      for(i = 0; i < nombres.length; i++){
+        if (nombre==nombres[i]){
+          encontrado=true;
+        }
+        if(encontrado==false){
+          alert("el nombre no se encuentra cargado");
+        }
+
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
